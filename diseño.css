@@ -1,0 +1,398 @@
+/* -------------------- BODY Y ESTILOS GENERALES -------------------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* -------------------- ENCABEZADO -------------------- */
+.header-container {
+  background-color: #fdf1f8;
+  border-bottom: 3px solid #e4a4d4;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.title-img {
+  max-height: 80px;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  background-color: #ffe3f3 !important;
+  border-bottom: 2px solid #c159c3;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #8e278d !important;
+  font-weight: bold;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #c159c3 !important;
+}
+
+.dropdown-menu {
+  background-color: #fbe7f2;
+  border: 1px solid #e4a4d4;
+}
+
+.dropdown-item:hover {
+  background-color: #ffe3f3;
+  color: #8e278d;
+}
+
+/* -------------------- FORMULARIO -------------------- */
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fdf1f8;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(193, 89, 195, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInUp 1s ease-out;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #8e278d;
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #e4a4d4;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+  border-color: #c159c3;
+  outline: none;
+}
+
+form input[type="submit"] {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  background-color: #c159c3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #a33aa8;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #fbe7f2;
+  padding: 20px 0;
+  border-top: 2px solid #c159c3;
+}
+
+footer h5 {
+  color: #8e278d;
+  margin-bottom: 10px;
+}
+
+footer img {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------- HORARIOS -------------------- */
+.hours-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #181417;
+  text-align: center;
+}
+.hours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hours-table {
+  width: auto;
+}
+.hours-table th {
+  background-color: #c159c3;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+}
+.hours-table td {
+  padding: 5px;
+  text-align: center;
+}
+.hours-table tr:nth-child(even) {
+  background-color: #f5c1e3;
+}
+.closed {
+  color: #dc3545;
+  font-weight: bold;
+}
+.note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+}
+
+/* -------------------- SERVICIOS DESTACADOS -------------------- */
+.services-section {
+  background-color: #fdf1f8;
+  padding: 3rem 1rem;
+}
+.service-card {
+  transition: transform 0.3s;
+  background-color: #ffffff;
+  border: 1px solid #e4a4d4;
+}
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: #fbe7f2;
+}
+
+/* -------------------- ANIMACIONES -------------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* -------------------- BOTÓN WHATSAPP -------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+.card-img-top {
+  height: 250px;             /* Altura fija */
+  object-fit: cover;         /* Recorta sin deformar */
+  width: 100%;               /* Ancho total de la tarjeta */
+  border-radius: 10px;       /* Bordes redondeados opcional */
+}
+
+.card {
+  height: 100%;
+}
+.tabla-bonita {
+  width: 100%;
+  background-color: #fff0fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(192, 58, 203, 0.15);
+}
+
+.tabla-bonita thead {
+  background-color: #f396f7;
+  color: white;
+  font-size: 18px;
+}
+
+.tabla-bonita th, .tabla-bonita td {
+  padding: 15px;
+  border: none;
+}
+
+.tabla-bonita tbody tr:hover {
+  background-color: #fde5f8;
+  transition: 0.3s;
+}
+
+.btn-ver {
+  background-color: #c03acb;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: #a92cb1;
+}
+/* Contenedor general para centrar contenido y darle espacio */
+.map-container {
+  max-width: 700px;       /* Ancho máximo para que no se extienda mucho */
+  margin: 0 auto;         /* Centrar horizontalmente */
+  padding: 20px;
+  background: #f9f0ff;    /* Fondo suave lila */
+  border-radius: 12px;    /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(249, 144, 255, 0.3); /* Sombra lila suave */
+}
+
+/* Estilo para el iframe del mapa */
+.map-container iframe.map {
+  width: 100%;            /* Que el mapa ocupe todo el ancho del contenedor */
+  height: 450px;          /* Altura fija */
+  border-radius: 12px;    /* Bordes redondeados también al mapa */
+  border: 3px solid #d583e1; /* Borde suave lila */
+  box-shadow: 0 2px 8px rgba(181, 120, 211, 0.3); /* Sombra más sutil */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para darle vida al mapa */
+.map-container iframe.map:hover {
+  transform: scale(1.02);
+}
+
+/* Estilo para el texto del encabezado */
+h4 {
+  max-width: 700px;
+  margin: 0 auto 20px auto; /* Centrar y separar del mapa */
+  color: #8e44ad; /* Morado elegante */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(142, 68, 173, 0.4);
+}
+
+.btn-ver-depilacion {
+  background-color: #c03acb; /* o #b96fcb como en el título */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-depilacion:hover {
+  background-color: #a437af; /* tono más oscuro al pasar el cursor */
+}
+.btn-ver,
+.btn-ver-depilacion,
+.btn-ver-color {
+  background-color: #b96fcb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover,
+.btn-ver-depilacion:hover,
+.btn-ver-color:hover {
+  background-color: #a553b5;
+}
+
+/* Tabla bonita */
+.tabla-bonita {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fce4fc; /* Fondo suave rosado */
+  color: #5a2a6d; /* Texto púrpura oscuro */
+  border: 2px solid #d291e4; /* Borde de la tabla */
+  box-shadow: 0 4px 8px rgba(185, 111, 203, 0.2); /* Sombra suave */
+}
+
+.tabla-bonita thead {
+  background-color: #d291e4; /* Encabezado lila */
+  color: white;
+}
+
+.tabla-bonita th,
+.tabla-bonita td {
+  padding: 15px;
+  border: 1px solid #d291e4;
+  vertical-align: middle;
+}
+
+.tabla-bonita tbody tr:nth-child(even) {
+  background-color: #f6ddfb; /* Filas alternas */
+}
+
+.tabla-bonita tbody tr:hover {
+  background-color: #ecd6f6; /* Hover efecto */
+  transition: background-color 0.3s ease;
+}
+
+/* Botón personalizado dentro de la tabla */
+.btn-ver-color {
+  background-color: #c66ac5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-ver-color:hover {
+  background-color: #a44ea1;
+  color: white;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.title-img {
+  width: 500PX; /* Cambia este valor según el tamaño que necesites */
+}
+
+
+
+
+
+
+
